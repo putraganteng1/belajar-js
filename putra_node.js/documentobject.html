@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>mengakses dan memamipulasi elemen</title>
+    </head>
+    <body>
+        <h1 id="header"> pepek</h1>
+        <p class="description"> adalah contoh kode program dari document object</p>
+        <button id="changeContent"> Context</button>
+        <script>
+            const header = document.getElementById("header");
+            const paragraph = document.querySelector(".description");
+            const button = document.getElementById("changeContent");
+            button.addEventListener("click", () =>{
+                header.textContent = "Hello, Document object";
+                paragraph.textContent = "content telah diubah oleh document object";
+            });  
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Menambahkan Elemen Baru</title>
+    </head>
+    <body>
+        <ul id="list">
+            <li>Item1</li>
+            <li>Item2</li>
+        </ul>
+        <button id="addItem">Add item</button>
+        <script>
+            const list = document.getElementById("list");
+            const button = document.getElementById("addItem");
+            button.addEventListener("click", ()=> {
+                const newItem = document.createElement("li");
+                newItem.textContent = "New item";
+                list.appendChild(newItem);
+            });
+        </script>
+    </body>
+</html>
